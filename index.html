@@ -42,7 +42,7 @@
         <h3>
 <a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Share your memories of Rongshan Middle School!</h3>
 
-<p>Rongshan Middle School (aka Rongshan Zhongxue) is a middle school in Ronggui, Shunde, China. The school has a website, but it looks super ugly. I will put some old photos here. If you have any and want them listed here, please send them to <a href="mailto:caiguanhao@gmail.com">my Gmail</a>. All photos here are licensed under the <a href="http://creativecommons.org/licenses/by-sa/3.0/deed.en">Creative Commons Attribution-Share Alike 3.0 Unported</a>.</p>
+<p>Rongshan Middle School (aka Rongshan Zhongxue) is a middle school in Ronggui, Shunde, China. The school has a <a class="rszx_net" href="http://www.rszx.net/" target="_blank">website</a>, but it looks super ugly. I will put some old photos here. If you have any and want them listed here, please send them to <a href="mailto:caiguanhao@gmail.com">my Gmail</a>. All photos here are licensed under the <a href="http://creativecommons.org/licenses/by-sa/3.0/deed.en">Creative Commons Attribution-Share Alike 3.0 Unported</a>.</p>
 
 <p>
   <a href="photos/south_gate.jpg" title="South Gate"><img alt="South Gate" src="photos/south_gate.jpg" style="height: 443px;" /></a><br /><small>South Gate by caiguanhao, 2006-04-30 14:37, 1/160, f/4, Canon PowerShot A620</small>
@@ -58,6 +58,11 @@
       </footer>
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    <script>$(function(){$('img').each(function(){$(this).css('height','auto');})});</script>
+    <script>
+      $(function(){
+        $('img').each(function(){$(this).css('height','auto');});
+        $('.rszx_net').click(function(e){if(!confirm('The website is really really super ugly. Are you sure you want to see that?')){e.preventDefault();}});
+      });
+    </script>
   </body>
 </html>
